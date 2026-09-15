@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BestPlan — Privacy Policy</title>
+<style>
+  :root {
+    --primary: #FF6B4A;
+    --secondary: #0F7A78;
+    --background: #FBF8F5;
+    --surface: #FFFFFF;
+    --text: #221D1A;
+    --text-muted: #7A7168;
+    --border: #EAE2DA;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(34,29,26,0.06);
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary);
+    margin: 0 0 12px;
+  }
+  p {
+    margin: 0 0 12px;
+  }
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  li:last-child {
+    margin-bottom: 0;
+  }
+  a {
+    color: var(--secondary);
+  }
+  footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>BestPlan — Privacy Policy</h1>
+  <p class="subtitle">A plain-language summary of what this app stores locally and what it sends to outside services.</p>
+  <p class="updated">Last updated: September 15, 2026</p>
+
+  <div class="card">
+    <h2>How BestPlan works</h2>
+    <p>BestPlan is a trip-planning app. You sign in with your Apple ID to use the app (see "Account" below); your trips, itinerary items, saved plans, and place-chat history are then stored on your device.</p>
+    <ul>
+      <li>BestPlan requires Sign in with Apple before you can use the app. Signing in is free and does not by itself require a paid subscription.</li>
+      <li>If you grant location access, BestPlan uses your current location to center the map, show nearby places, label your current area, and tailor suggestions. BestPlan only requests location while you are using the app; it does not request Always or background location.</li>
+      <li>BestPlan stores trip titles, notes, itinerary items, saved plans, and place-chat history locally on your device.</li>
+      <li>When you search, ask a place question, or request AI help, the app may use the search text you typed, place names you opened, and relevant itinerary context needed to answer that request.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Account and subscription</h2>
+    <p>BestPlan offers a limited number of free searches per rolling 30-day period. Beyond that, continued use requires signing in and subscribing.</p>
+    <ul>
+      <li>Sign in with Apple: we receive the identifier, name, and email address Apple provides for your account (Apple lets you hide your real email address). This is used only to identify your account and entitlements within BestPlan.</li>
+      <li>Subscriptions are processed by RevenueCat and Apple's In-App Purchase system. RevenueCat receives your anonymous app-level user identifier and purchase/subscription status so the app can unlock unlimited searches; BestPlan does not receive or store your payment card details.</li>
+      <li>You can sign out, or permanently delete your locally stored data and disconnect your subscription identity from this install, at any time from Settings &rarr; Delete my data.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Services that may receive data</h2>
+    <p>Depending on how this build is configured, BestPlan's AI, place-search, and photo-search requests are sent either directly from the app to the provider below, or through a backend proxy that BestPlan operates (which forwards the same request to the same provider, holding the provider API key server-side instead of in the app).</p>
+    <ul>
+      <li>Google Gemini receives search prompts, place names, place notes, itinerary context, and place-chat questions to generate suggestions, summaries, tips, and answers.</li>
+      <li>Google Places API receives place-search text and the current map/search area so the app can return real nearby places.</li>
+      <li>Serper receives place-name or place-category queries when the app looks up a place photo.</li>
+      <li>Open-Meteo receives latitude and longitude so the app can fetch current weather and tailor suggestions.</li>
+      <li>Apple-provided location and geocoding services on iOS may process typed locations or reverse-geocoding requests so the app can place the map and label your current area.</li>
+      <li>If a Serper image lookup is unavailable, the app may load a generic travel or category image from LoremFlickr instead of a place-specific image.</li>
+      <li>When requests go through BestPlan's own backend proxy, that backend also receives a per-install anonymous device identifier (used only to rate-limit abuse) and a Firebase App Check attestation token (used only to confirm the request comes from a genuine, unmodified copy of this app) — neither is tied to your name or Apple ID.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>What BestPlan does not do</h2>
+    <ul>
+      <li>No analytics, advertising, or tracking SDKs were added to this app.</li>
+      <li>No App Tracking Transparency prompt is shown, and the app does not request IDFA access.</li>
+      <li>No camera, microphone, contacts, photo library, calendar, Bluetooth, health, or similar permissions are requested by this app.</li>
+      <li>There is no public user-to-user social feed or public profile system in this app.</li>
+      <li>We do not sell your personal information.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Your choices</h2>
+    <ul>
+      <li>You can deny location permission and still search by typing a city, place, or address instead.</li>
+      <li>You can permanently delete your locally stored BestPlan data, sign out, and disconnect your subscription identity from this install at any time via Settings &rarr; Delete my data — no need to uninstall the app.</li>
+      <li>If you ask for directions to a place, your device may open Apple Maps or Google Maps with that destination.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data can be sent to the developer via the contact information listed on the BestPlan App Store listing.</p>
+  </div>
+
+  <footer>© 2026 BestPlan. This page mirrors the in-app Privacy Policy screen.</footer>
+</div>
+</body>
+</html>
